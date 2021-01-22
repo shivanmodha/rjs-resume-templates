@@ -13,3 +13,6 @@ Some details for you to get started:
 There are two styles for this one
  - Left sidebar
  - Right sidebar
+
+## External Templates
+It's probably important to mention that relaxed js already does come with a resume template [here](https://github.com/RelaxedJS/ReLaXed-examples/blob/master/examples/resume/resume.pdf).
