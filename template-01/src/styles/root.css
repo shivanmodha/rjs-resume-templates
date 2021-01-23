@@ -1,0 +1,27 @@
+:root {
+    /* master page sizing */
+    --page-width: 8.5in;
+    --page-height: 10in;
+    --page-margin-left: 0.4in;
+    --page-margin-right: 0.4in;
+    --page-margin-top: 0.4in;
+    --page-margin-bottom: 0.4in;
+
+    /* header and footer */
+    --page-header-height: 0in;
+    --page-footer-height: 0.25in;
+
+    --page-sidebar-width: 2in;
+    --page-sidebar-margin: 0.1in;
+}
+html {
+    -webkit-print-color-adjust: exact;
+}
+body {
+    width: var(--page-width);
+}
+@page {
+    -relaxed-page-width: 8.5in;
+    -relaxed-page-height: 11in;
+    size: 8.5in 11in;
+}

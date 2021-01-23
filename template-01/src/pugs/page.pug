@@ -1,0 +1,53 @@
+include header.pug
+include footer.pug
+
+mixin document()
+    - global.pageCount = 0;
+    block
+    script.
+        let macros = {
+            "$page-max": !{global.pageCount}
+        }
+        Object.keys(macros).forEach((key) => {
+            let value = macros[key];
+            while (document.body.innerHTML.includes(key)) {
+                document.body.innerHTML = document.body.innerHTML.replace(key, value)
+            }
+        });
+
+mixin page()
+    - global.pageCount++;
+    - currentPage = global.pageCount;
+    #page
+        #page.header
+            +header()
+        #page.content
+            block
+        #page.footer
+            +footer(currentPage)
+
+mixin container(sidebar)
+    - var blocks = {}
+    mixin sidebar()
+        - blocks["sidebar"] = block
+    mixin content()
+        - blocks["content"] = block
+    block
+    if sidebar == "left"
+        #container.sidebar-l
+            #sidebar
+                - blocks.sidebar()
+            #content
+                - blocks.content()
+    else if sidebar == "right"
+        #container.sidebar-r
+            #content
+                - blocks.content()
+            #sidebar
+                - blocks.sidebar()
+    else
+        #container.sidebar-n
+            #content
+                - blocks.content()
+style
+    include ../styles/pages.css

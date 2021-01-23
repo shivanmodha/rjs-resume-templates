@@ -1,0 +1,22 @@
+{
+    "name": "resume",
+    "version": "1.0.0",
+    "description": "Resume Template 01",
+    "main": "main.pug",
+    "scripts": {
+        "start": "relaxed src/main.pug -t temp --no-sandbox"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shivanmodha/rjs-resume-templates"
+    },
+    "author": "Shivan Modha",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/shivanmodha/rjs-resume-templates/issues"
+    },
+    "homepage": "https://github.com/shivanmodha/rjs-resume-templates#readme",
+    "devDependencies": {
+        "relaxedjs": "^0.2.4"
+    }
+}

@@ -1,0 +1,316 @@
+include pugs/page.pug
+include pugs/info.pug
+
+link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css")
+link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Source+Code+Pro")
++document()
+    +page()
+        +container("left")
+            +content()
+                #title-brand
+                    h1.display-4 Jon Snow
+                    p King &middot; Commander &middot; Leader
+                +info-block("fa-industry", "Experience")
+                    +info-entry("Organization", "Location")
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                    +info-entry("Organization", "Location")
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                    ul
+                                        li Maybe some sub details
+                                        li Maybe some sub details
+                                        li Maybe some sub details
+                                li More details
+                                    ul
+                                        li Maybe some sub details
+                                        li Maybe some sub details
+                                        li Maybe some sub details
+                                li More details
+                                    ul
+                                        li Maybe some sub details
+                                        li Maybe some sub details
+                                        li Maybe some sub details
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+            +sidebar()
+                #empty-space
+                #side-section
+                    h5 Contact
+                    ul
+                        li #[i.fa.fa-phone] < Phone Number >
+                        li #[i.fa.fa-globe] #[a(href="website") < Website >]
+                        li #[i.fa.fa-envelope] #[a(href="mailto:email") < Email >]
+                        li #[i.fab.fa-github] #[a(href="https://github.com/some-github-account-idk") < GitHub >]
+                        li #[i.fab.fa-linkedin] #[a(href="https://www.linkedin.com/in/some-linkedin-account-idk/") < LinkedIn >]
+                #empty-space
+                    div.divider.div-transparent.div-arrow-up
+                #side-section
+                    h5 Section Header
+                    ul
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                #empty-space
+                    div.divider.div-transparent.div-arrow-up
+                #side-section
+                    h5 Section Header
+                    ul
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+    +page()
+        +container("left")
+            +content()
+                +info-block("", "")
+                    +info-entry("Organization", "Location")
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                +info-block("fa-users-cog", "Portfolio")
+                    +info-entry("Project", "GitHub Link")
+                        +info-subentry("Language", null)
+                            p General project overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                    +info-entry("Project", "GitHub Link")
+                        +info-subentry("Language", null)
+                            p General project overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                +info-block("fa-graduation-cap", "Education")
+                    +info-entry("University", "Location")
+                        p Some BS or Master's degree in some field
+            +sidebar()
+                #side-section
+                    h5 Section Header
+                    ul
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                #empty-space
+                    div.divider.div-transparent.div-arrow-up
+                #side-section
+                    h5 Section Header
+                    ul
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+    +page()
+        +container("right")
+            +content()
+                #title-brand
+                    h1.display-4 Jon Snow
+                    p King &middot; Commander &middot; Leader
+                +info-block("fa-industry", "Experience")
+                    +info-entry("Organization", "Location")
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                    +info-entry("Organization", "Location")
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                    ul
+                                        li Maybe some sub details
+                                        li Maybe some sub details
+                                        li Maybe some sub details
+                                li More details
+                                    ul
+                                        li Maybe some sub details
+                                        li Maybe some sub details
+                                        li Maybe some sub details
+                                li More details
+                                    ul
+                                        li Maybe some sub details
+                                        li Maybe some sub details
+                                        li Maybe some sub details
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+            +sidebar()
+                #empty-space
+                #side-section
+                    h5 Contact
+                    ul
+                        li #[i.fa.fa-phone] < Phone Number >
+                        li #[i.fa.fa-globe] #[a(href="website") < Website >]
+                        li #[i.fa.fa-envelope] #[a(href="mailto:email") < Email >]
+                        li #[i.fab.fa-github] #[a(href="https://github.com/some-github-account-idk") < GitHub >]
+                        li #[i.fab.fa-linkedin] #[a(href="https://www.linkedin.com/in/some-linkedin-account-idk/") < LinkedIn >]
+                #empty-space
+                    div.divider.div-transparent.div-arrow-up
+                #side-section
+                    h5 Section Header
+                    ul
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                #empty-space
+                    div.divider.div-transparent.div-arrow-up
+                #side-section
+                    h5 Section Header
+                    ul
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+    +page()
+        +container("right")
+            +content()
+                +info-block("", "")
+                    +info-entry("Organization", "Location")
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                        +info-subentry("Position Title", "Start Date - End Date")
+                            p General position overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                +info-block("fa-users-cog", "Portfolio")
+                    +info-entry("Project", "GitHub Link")
+                        +info-subentry("Language", null)
+                            p General project overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                    +info-entry("Project", "GitHub Link")
+                        +info-subentry("Language", null)
+                            p General project overview
+                            ul
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                                li More details
+                +info-block("fa-graduation-cap", "Education")
+                    +info-entry("University", "Location")
+                        p Some BS or Master's degree in some field
+            +sidebar()
+                #side-section
+                    h5 Section Header
+                    ul
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                #empty-space
+                    div.divider.div-transparent.div-arrow-up
+                #side-section
+                    h5 Section Header
+                    ul
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+                        li Some stuffs
+style
+    include styles/vendor/bootstrap.min.css
+    include styles/root.css
+    include styles/resume.css
